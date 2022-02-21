@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mugesh</title>
+</head>
+<body>
+  <script>
+    let name;
+    name="Live tutorial Of JavaScript" ;
+    console.log(name);
+
+    console.log("TITLE "+ document.title);
+
+    let length = name.length;
+    console.log("length " + length);
+
+    let result1 = name.toUpperCase();
+    console.log("UPPERCASE "+ result1);
+
+    let result = name.toLowerCase();
+    console.log("lowercase "+ result);
+    
+    let str ="Live tutorial Of JavaScript" ;
+    str = str.substring(1);
+    console.log("first letter removal "+ str);
+
+    let firstSpace=str.indexOf(" ");
+    let newStr=str.slice(firstSpace);
+    console.log("first word removal " + newStr);
+
+    let text = "Live tutorial Of JavaScript" ;
+    const myArray = text.split(" ");
+    console.log(myArray);
+
+    let spacing="Live tutorial Of JavaScript" ;
+    let stringArray = spacing.split(/(\s+)/);
+    console.log(stringArray);
+
+    let comma="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+    let commaArray = comma.split(",");
+    console.log(commaArray);
+
+    let python="Live tutorial Of JavaScript";
+    let resultpython = text.replace("JavaScript","Python");
+    console.log("Replace JavaScript " + resultpython);
+
+    name.indexOf("J");
+    console.log("index of J " + name.indexOf("J"));
+
+    name.charAt("15");
+    console.log("index of 15th position " + name.charAt("15"));
+
+    name.indexOf("L");
+    console.log("index of first " + name.indexOf("L"));
+
+    name.lastIndexOf("t");
+    console.log("index of last " + name.lastIndexOf("t"));
+
+    name1="You cannot end a sentence with because because because is a conjunction"
+    name1.indexOf("because");
+    console.log("index of first occurence because   " + name1.indexOf("because"));
+
+    name2="You cannot end a sentence with because because because is a conjunction"
+    name2.lastIndexOf("because");
+    console.log("index of last occurence because   " + name2.lastIndexOf("because"));
+
+    name1="You cannot end a sentence with because because because is a conjunction"
+    name1.indexOf("because");
+    console.log("index of search first occurence because   " + name1.indexOf("because"));
+
+    let js=" Live tutorial Of JavaScript ";
+    let trim=js.trim();
+    console.log("trim whitespacing "+ js);
+
+    const str1 = "Live tutorial Of JavaScript";
+    console.log(str1.startsWith('Live'));
+
+    const str2 = "Live tutorial Of JavaScript";
+    console.log(str2.endsWith('JavaScript'));
+
+    let text1="Live tutorial Of JavaScript" ;
+    text1.match("a");
+    console.log(text1.match("a"));
+
+    let te,xt;
+    te="Live tutorial Of ";
+    xt="JavaScript";
+    let final=te.concat(xt);
+    console.log("concat of string "+ final);
+
+    let text2="Live tutorial Of JavaScript" 
+    let final2=text2.repeat(2);
+    console.log("repeat the string "+ final2);
+  </script>
+</body>
+</html>
